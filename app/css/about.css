@@ -1,0 +1,160 @@
+.texts {
+  min-height: 450px;
+  padding-top: 21px; }
+  .texts .title {
+    margin-bottom: 17px; }
+  .texts .subtitle {
+    font-family: "Montserrat Bold", arial;
+    font-size: 14px;
+    margin-bottom: 16px; }
+  .texts p {
+    font-family: "OpenSans", arial;
+    line-height: 30px; }
+
+.benefits {
+  min-height: 660px;
+  padding-top: 21px; }
+  .benefits .text {
+    text-align: center; }
+    .benefits .text .title {
+      margin-bottom: 17px; }
+    .benefits .text p {
+      max-width: 730px;
+      margin: 0 auto;
+      font-family: "OpenSans", arial;
+      line-height: 22px; }
+  .benefits .points {
+    margin-top: 97px; }
+  .benefits .point {
+    margin-bottom: 35px; }
+    .benefits .point i {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: #7beec7;
+      color: white;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+      margin-right: 19px;
+      margin-bottom: 12px; }
+    .benefits .point .title1 {
+      font-family: "Montserrat Bold", arial;
+      font-size: 18px;
+      display: inline-block; }
+    .benefits .point p {
+      font-family: "OpenSans", arial;
+      font-size: 14px;
+      line-height: 30px; }
+
+.team {
+  min-height: 890px;
+  padding-top: 21px; }
+  .team .text {
+    text-align: center; }
+    .team .text .title {
+      margin-bottom: 17px; }
+    .team .text p {
+      max-width: 730px;
+      margin: 0 auto;
+      font-family: "OpenSans", arial;
+      line-height: 22px; }
+  .team .photos {
+    margin-top: 98px;
+    margin-left: -30px; }
+    .team .photos .photo {
+      min-height: 334px;
+      text-align: center;
+      margin-bottom: 30px; }
+      .team .photos .photo .member {
+        height: 334px;
+        width: 225px;
+        margin: 0 auto;
+        position: inherit; }
+      .team .photos .photo .who {
+        width: 263px;
+        height: 334px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f5f5f5;
+        font-size: 12px;
+        font-family: "Montserrat Bold", arial; }
+        .team .photos .photo .who .info {
+          margin-top: 50%; }
+          .team .photos .photo .who .info .name {
+            padding-top: 10px;
+            transition: padding-top 0.5s ease-out 0s; }
+          .team .photos .photo .who .info .position {
+            margin-top: 20px;
+            color: white;
+            background-color: #7beec7;
+            display: inline-block;
+            padding: 2px 5px; }
+      .team .photos .photo img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease-out 0s; }
+    .team .photos .member:hover img {
+      opacity: 0; }
+    .team .photos .member:hover .who .info .name {
+      padding-top: 0; }
+    .team .photos .member:hover .who .info .position {
+      margin-top: 10px;
+      transition: margin-top 0.5s ease-out 0.1s; }
+
+.bar {
+  min-height: 150px; }
+  .bar .button {
+    height: 60px;
+    padding-right: 30px; }
+  .bar .text {
+    min-height: 150px;
+    background-color: #efeff0;
+    padding: 30px 0; }
+  .bar p {
+    font-family: 'Open Sans Italic';
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 32px;
+    padding-left: 31px;
+    padding-right: 31px; }
+  .bar .readMore {
+    float: right;
+    margin-top: 23px; }
+
+.feedback {
+  padding-top: 152px;
+  min-height: 575px; }
+  .feedback .opinions {
+    text-align: center;
+    height: inherit;
+    margin-bottom: 30px; }
+    .feedback .opinions .face {
+      display: inline-block;
+      margin-bottom: 20px; }
+    .feedback .opinions .name {
+      display: inline-block;
+      color: white;
+      background-color: #7beec7;
+      padding: 0px 13px;
+      margin-top: 12px;
+      height: 27px;
+      line-height: 27px;
+      font-family: "Montserrat Bold", arial; }
+    .feedback .opinions p {
+      padding: 0 1px;
+      line-height: 20px;
+      line-height: 29px; }
+  .feedback .partner {
+    text-align: center;
+    height: 100px;
+    width: 165px;
+    border: 1px solid #efeff0;
+    line-height: 98px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+    .feedback .partner img {
+      margin: 0 auto; }

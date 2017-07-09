@@ -1,0 +1,173 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title About Us
+	include includes/styles.pug
+	link(href="http://allfont.ru/allfont.css?fonts=open-sans-italic" rel="stylesheet" type="text/css")
+	link(rel="stylesheet", href="css/about.css")
+body
+	include includes/site-hero.pug
+	.head.wow.fadeIn
+		include includes/header.pug
+		+site-hero("ABOUT US")
+	.texts.wow.fadeInUp
+		.container
+			.row
+				.col-sm-6
+					.title ABOUT US
+					.subtitle WE ARE AWESOME
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+				.col-sm-6
+					.title WHAT WE DO
+					.subtitle CREATIVE & DIGITAL
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+	.benefits
+		.container
+			.text
+				.title SOME BENEFITS
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.row.points
+				.col-md-4.col-sm-6.point.wow.fadeInUp
+					i.icon.ion-iphone
+					.title1 FULLY RESPONSIVE
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+				.col-md-4.col-sm-6.point.wow.fadeInUp(data-wow-delay='0.1s')
+					i.icon.ion-ios-infinite-outline
+					.title1 UNLIMITED OPTIONS
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+				.col-md-4.col-sm-6.point.wow.fadeInUp(data-wow-delay='0.2s')
+					i.icon.ion-social-wordpress-outline
+					.title1 WORDPRESS
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+				.col-md-4.col-sm-6.point.wow.fadeInUp(data-wow-delay='0.3s')
+					i.icon.ion-ios-cart-outline
+					.title1 E-COMMERCE
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+				.col-md-4.col-sm-6.point.wow.fadeInUp(data-wow-delay='0.4s')
+					i.icon.ion-ios-settings
+					.title1 CUSTOMIZABLE DESIGN
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+				.col-md-4.col-sm-6.point.wow.fadeInUp(data-wow-delay='0.5s')
+					i.icon.ion-settings
+					.title1 SUPPORT
+					p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+	.team
+		.container
+			.text
+				.title THE DREAM TEAM
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.photos
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp
+					.member
+						.who
+							.info
+								.name JOHN DOE
+								.position CEO / CO-FOUNDER
+						img(src="img/photo1.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.1s')
+					.member
+						.who
+							.info
+								.name JENNIFER TOMS
+								.position PROTECT CHIED
+						img(src="img/photo2.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.2s')
+					.member
+						.who
+							.info
+								.name JACK DOE
+								.position GRAPHIC DESIGNER
+						img(src="img/photo3.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.3s')
+					.member
+						.who
+							.info
+								.name ANNE TURIN
+								.position ART DIRECTOR
+						img(src="img/photo4.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.4s')
+					.member
+						.who
+							.info
+								.name NICOLAS AKHOUAD
+								.position CTO
+						img(src="img/photo5.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.5s')
+					.member
+						.who
+							.info
+								.name TIM COOK
+								.position FRONT-END DEVELOPER
+						img(src="img/photo6.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.6s')
+					.member
+						.who
+							.info
+								.name ALAN TURIN
+								.position BACK-END DEVELOPER
+						img(src="img/photo7.png", alt="")
+				.col-lg-3.col-md-4.col-sm-6.photo.wow.fadeInUp(data-wow-delay='0.7s')
+					.member
+						.who
+							.info
+								.name JOHN WHICK
+								.position WEB DESIGNER
+						img(src="img/photo8.png", alt="")
+	.bar.wow.fadeInUp
+		.container
+			.col-lg-12.text
+				p.col-sm-9 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+				.col-sm-3.button
+					button.readMore READ MORE
+	.feedback.wow.fadeInUp
+		.container
+			.row
+				.opinions.col-sm-6
+					ul.slides
+						li
+							.face
+								img(src="img/face.png", alt="")
+							p Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus, gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
+							.name JOHN DOE
+						li
+							.face
+								img(src="img/face.png", alt="")
+							p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+							.name JOHN DOE
+						li
+							.face
+								img(src="img/face.png", alt="")
+							p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+							.name JOHN DOE
+						.strut
+				.partners.col-sm-6
+					.row
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client1.png", alt="")
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client2.png", alt="")
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client3.png", alt="")
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client4.png", alt="")
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client5.png", alt="")
+						.col-lg-4.col-sm-6
+							.partner
+								a(href="")
+									img(src="img/client6.png", alt="")
+	include includes/contact.pug
+	include includes/footer.pug
+	include includes/scripts.pug
+	
