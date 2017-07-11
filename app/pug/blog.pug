@@ -13,17 +13,52 @@ body
 	.container.blogContent
 		.row
 			.col-lg-8.col-md-8
-				.blogItem
+				.blogItem.wow.fadeInUp
 					img(src="img/post_1.jpg", alt="").blogImg
-				.blogItem
-				.blogItem
+					span.date OCTOBER 13, 2015
+					span.feedback
+						span.comments
+							i.icon.ion-chatbox-working
+							span.commentsCount 8
+						span.likes
+							i.icon.ion-ios-heart
+							span.likesCount 15
+					.blogTitle THE BIG LEAGUES OUR TURN STRAIGHTNIN
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					a.continue CONTINUE READING →
+				.blogItem.wow.fadeInUp
+					img(src="img/post_1.jpg", alt="").blogImg
+					span.date OCTOBER 13, 2015
+					span.feedback
+						span.comments
+							i.icon.ion-chatbox-working
+							span.commentsCount 8
+						span.likes
+							i.icon.ion-ios-heart
+							span.likesCount 15
+					.blogTitle THE BIG LEAGUES OUR TURN STRAIGHTNIN
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					a.continue CONTINUE READING →
+				.blogItem.wow.fadeInUp
+					img(src="img/post_1.jpg", alt="").blogImg
+					span.date OCTOBER 13, 2015
+					span.feedback
+						span.comments
+							i.icon.ion-chatbox-working
+							span.commentsCount 8
+						span.likes
+							i.icon.ion-ios-heart
+							span.likesCount 15
+					.blogTitle THE BIG LEAGUES OUR TURN STRAIGHTNIN
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					a.continue CONTINUE READING →
 			.col-lg-3.col-md-4.right
-				.input-group.col-lg-12.search
+				.input-group.col-lg-12.search.wow.fadeInUp
 					input(type="text" class="form-control" placeholder="search...")
 					span.input-group-btn
 						button(type="button").btn
 							i.icon.ion-search
-				.postList
+				.postList.wow.fadeInUp
 					.postListTilte POSTS
 					ul.postsFilter
 						li.filterItem.col-xs-4
@@ -35,22 +70,71 @@ body
 						li.filterItem.col-xs-4
 							input(type="radio" name="postCategories" id="comments")
 							label(for="comments" data-filter=".comments") COMMENTS
-					.posts
-						.post.latest
+					ul.posts
+						li.post.latest
 							img(src="img/postMini1.png" alt="")
 							.describe
 								.postTitle MAGNA MOLLIS ULTRICIES
 								.date 3th oct 2012
-						.post.latest.popular
+						li.post.latest.popular
 							img(src="img/postMini2.png" alt="")
 							.describe
 								.postTitle MAGNA MOLLIS ULTRICIES
 								.date 3th oct 2012
-						.post.latest.popular
+						li.post.latest.popular
 							img(src="img/postMini3.png" alt="")
 							.describe
 								.postTitle MAGNA MOLLIS ULTRICIES
 								.date 3th oct 2012
+				.categoriesPosts.wow.fadeInUp
+					.postListTilte CATEGORIES
+					ul.categoriesList
+						li.categoryPost
+							a(href="") Business
+								span.count 15
+						li.categoryPost
+							a(href="") Photography
+								span.count 17
+						li.categoryPost
+							a(href="") Journal
+								span.count 22
+						li.categoryPost
+							a(href="") Web development
+								span.count 30
+				.tags.wow.fadeInUp
+					.postListTilte TAGS
+					ul.categoriesList
+						li.tag
+							a(href="") CSS
+						li.tag
+							a(href="") JAVASCRIPT
+						li.tag
+							a(href="") JQUERY
+						li.tag
+							a(href="") HTML5
+						li.tag
+							a(href="") BOOTSTRAP
+						li.tag
+							a(href="") CSS
+						li.tag
+							a(href="") JAVASCRIPT
+						li.tag
+							a(href="") JQUERY
+				.archives.wow.fadeInUp
+					.postListTilte ARCHIVES
+					ul
+						li.categoryPost
+							a(href="") Business
+								span.count 15
+						li.categoryPost
+							a(href="") Photography
+								span.count 17
+						li.categoryPost
+							a(href="") Journal
+								span.count 22
+						li.categoryPost
+							a(href="") Web development
+								span.count 30
 	include includes/contact.pug
 	include includes/footer.pug
 	include includes/scripts.pug

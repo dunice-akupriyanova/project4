@@ -1,11 +1,56 @@
 body {
   font-family: "Montserrat Bold", arial; }
 
-.blogItem .blogImg {
-  width: 100%; }
+.blogItem {
+  margin-bottom: 60px; }
+  .blogItem .blogImg {
+    width: 100%;
+    margin-bottom: 30px; }
+  .blogItem .date {
+    background-color: #7beec7;
+    display: inline-block;
+    height: 30px;
+    width: 165px;
+    line-height: 30px;
+    color: white;
+    text-align: center; }
+  .blogItem .feedback {
+    display: inline-block; }
+  .blogItem .icon {
+    font-size: 17px;
+    margin-right: 12px;
+    margin-left: 16px;
+    display: inline-block; }
+  .blogItem .comments {
+    font-family: "Montserrat", arial; }
+  .blogItem .likes {
+    font-family: "Montserrat", arial; }
+    .blogItem .likes .icon {
+      color: #ea6a6a; }
+  .blogItem .blogTitle {
+    margin-top: 13px;
+    margin-bottom: 11px;
+    font-size: 18px; }
+  .blogItem p {
+    line-height: 24px;
+    margin-bottom: 21px;
+    padding-left: 1px; }
+
+@media (min-width: 992px) {
+  .blogItem {
+    margin-bottom: 70px; }
+  .blogItem:last-child {
+    margin-bottom: 81px; } }
+
+@media (min-width: 1200px) {
+  .blogItem {
+    margin-bottom: 98px; }
+  .blogItem:last-child {
+    margin-bottom: 81px; } }
 
 .right {
-  float: right; }
+  float: right;
+  margin-bottom: 30px; }
 
 .blogContent {
   margin-top: 50px; }
@@ -76,3 +121,40 @@ body {
           display: inline-block;
           font-family: "OpenSans", arial;
           font-size: 12px; }
+  .blogContent .categoriesPosts {
+    margin-top: 40px; }
+    .blogContent .categoriesPosts ul {
+      margin-top: 6px; }
+  .blogContent .categoryPost {
+    cursor: pointer;
+    font-family: "OpenSans", arial;
+    line-height: 51px;
+    height: 51px;
+    border-bottom: 1px solid gray;
+    padding: 0 15px; }
+    .blogContent .categoryPost .count {
+      float: right;
+      display: inline-block; }
+  .blogContent .categoryPost:hover {
+    border-bottom: 1px solid #7beec7; }
+  .blogContent .tags {
+    margin-top: 43px; }
+    .blogContent .tags ul {
+      margin-top: 27px; }
+    .blogContent .tags .tag {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 13px;
+      background-color: #e5e5e5;
+      color: #999999;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      min-width: 65px;
+      text-align: center; }
+  .blogContent .archives {
+    margin-top: 41px;
+    margin-bottom: 30px; }
+    .blogContent .archives ul {
+      margin-top: 4px; }

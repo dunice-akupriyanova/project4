@@ -7,10 +7,53 @@ $open_sans_extra_bold: 'Open Sans Extrabold', arial
 body
 	font-family: $montserrat_bold
 .blogItem
+	// min-height: 790px
+	margin-bottom: 60px
 	.blogImg
 		width: 100%
+		margin-bottom: 30px
+	.date
+		background-color: $green
+		display: inline-block
+		height: 30px
+		width: 165px
+		line-height: 30px
+		color: white
+		text-align: center
+	.feedback
+		display: inline-block
+	.icon
+		font-size: 17px
+		margin-right: 12px
+		margin-left: 16px
+		display: inline-block
+	.comments
+		font-family: $montserrat
+	.likes
+		font-family: $montserrat
+		.icon
+			color: #ea6a6a
+	.blogTitle
+		margin-top: 13px
+		margin-bottom: 11px
+		font-size: 18px
+	p
+		line-height: 24px
+		margin-bottom: 21px
+		padding-left: 1px
+@media(min-width: 992px)
+	.blogItem
+		margin-bottom: 70px
+	.blogItem:last-child
+		margin-bottom: 81px
+@media(min-width: 1200px)
+	.blogItem
+		margin-bottom: 98px
+	.blogItem:last-child
+		margin-bottom: 81px
 .right
 	float: right
+	margin-bottom: 30px
 .blogContent
 	margin-top: 50px
 	.search
@@ -81,3 +124,40 @@ body
 					display: inline-block
 					font-family: $open_sans
 					font-size: 12px
+	.categoriesPosts
+		margin-top: 40px
+		ul
+			margin-top: 6px
+	.categoryPost
+		cursor: pointer
+		font-family: $open_sans
+		line-height: 51px
+		height: 51px
+		border-bottom: 1px solid gray
+		padding: 0 15px
+		.count
+			float: right
+			display: inline-block
+	.categoryPost:hover
+		border-bottom: 1px solid $green
+	.tags
+		margin-top: 43px
+		ul
+			margin-top: 27px
+		.tag
+			height: 30px
+			line-height: 30px
+			padding: 0 13px
+			background-color: #e5e5e5
+			color: #999999
+			display: inline-block
+			margin-right: 5px
+			margin-bottom: 5px
+			font-size: 12px
+			min-width: 65px
+			text-align: center
+	.archives
+		margin-top: 41px
+		margin-bottom: 30px
+		ul
+			margin-top: 4px
