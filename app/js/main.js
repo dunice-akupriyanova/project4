@@ -28,6 +28,7 @@ $(document).ready(function() {
 		$('.filter .active').removeClass('active');
 		$(this).addClass('active');
 		var selector = $(this).attr('data-filter');
+		// console.log('selector='+selector);
 		$container.isotope({
 			filter: selector,
 			animationOptions: {
@@ -35,7 +36,6 @@ $(document).ready(function() {
 				animationEngine : "jquery"
 			}
 		});
-		// return false;
 	});
 	$('.portf').hover(function(){
 		$('.portfolioList').slideToggle(200);

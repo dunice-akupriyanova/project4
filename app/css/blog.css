@@ -1,0 +1,78 @@
+body {
+  font-family: "Montserrat Bold", arial; }
+
+.blogItem .blogImg {
+  width: 100%; }
+
+.right {
+  float: right; }
+
+.blogContent {
+  margin-top: 50px; }
+  .blogContent .search {
+    height: 40px; }
+    .blogContent .search .form-control {
+      height: 40px;
+      font-family: "Montserrat Bold", arial;
+      font-size: 12px;
+      padding-left: 16px;
+      background-color: #ececec;
+      text-transform: uppercase;
+      border-radius: 0px;
+      border: 0px;
+      box-shadow: none;
+      transition: background-color 0.2s ease-out 0s; }
+    .blogContent .search .input-group-btn {
+      border-radius: 0px;
+      background-color: #ececec; }
+      .blogContent .search .input-group-btn .btn {
+        border-radius: 0px;
+        background-color: #ececec;
+        color: #afafb4;
+        font-size: 18px;
+        padding-right: 17px;
+        padding-top: 7px; }
+    .blogContent .search .form-control:focus {
+      background-color: #f0f0f0; }
+  .blogContent .postList {
+    margin-top: 45px; }
+    .blogContent .postList ul.postsFilter li.filterItem {
+      display: inline-block;
+      padding: 0; }
+      .blogContent .postList ul.postsFilter li.filterItem input[type="radio"] {
+        display: none; }
+      .blogContent .postList ul.postsFilter li.filterItem label {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        font-size: 12px;
+        height: 56px;
+        line-height: 56px;
+        border-bottom: 2px solid #999999;
+        color: #999999; }
+      .blogContent .postList ul.postsFilter li.filterItem label.active {
+        border-bottom: 2px solid #7beec7;
+        color: #60606e; }
+    .blogContent .postList .posts {
+      margin-top: 85px; }
+      .blogContent .postList .posts .post {
+        display: block;
+        width: 100%;
+        height: 90px; }
+        .blogContent .postList .posts .post img {
+          display: inline-block;
+          float: left;
+          height: 80px;
+          margin-right: 18px; }
+        .blogContent .postList .posts .post .describe {
+          display: inline-block;
+          float: right;
+          position: inherit;
+          margin-top: 11px; }
+        .blogContent .postList .posts .post .postTitle {
+          display: inline-block;
+          line-height: 18px; }
+        .blogContent .postList .posts .post .date {
+          display: inline-block;
+          font-family: "OpenSans", arial;
+          font-size: 12px; }

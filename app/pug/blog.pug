@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Blog
+	include includes/styles.pug
+	link(rel="stylesheet", href="css/blog.css")
+body
+	include includes/site-hero.pug
+	.head.wow.fadeIn
+		include includes/header.pug
+		+site-hero("BLOG POSTS", "BLOG")
+	.container.blogContent
+		.row
+			.col-lg-8.col-md-8
+				.blogItem
+					img(src="img/post_1.jpg", alt="").blogImg
+				.blogItem
+				.blogItem
+			.col-lg-3.col-md-4.right
+				.input-group.col-lg-12.search
+					input(type="text" class="form-control" placeholder="search...")
+					span.input-group-btn
+						button(type="button").btn
+							i.icon.ion-search
+				.postList
+					.postListTilte POSTS
+					ul.postsFilter
+						li.filterItem.col-xs-4
+							input(type="radio" name="postCategories" id="latest" checked="checked")
+							label(for="latest" data-filter=".latest" class="active") LATEST
+						li.filterItem.col-xs-4
+							input(type="radio" name="postCategories" id="popular")
+							label(for="popular" data-filter=".popular") POPULAR
+						li.filterItem.col-xs-4
+							input(type="radio" name="postCategories" id="comments")
+							label(for="comments" data-filter=".comments") COMMENTS
+					.posts
+						.post.latest
+							img(src="img/postMini1.png" alt="")
+							.describe
+								.postTitle MAGNA MOLLIS ULTRICIES
+								.date 3th oct 2012
+						.post.latest.popular
+							img(src="img/postMini2.png" alt="")
+							.describe
+								.postTitle MAGNA MOLLIS ULTRICIES
+								.date 3th oct 2012
+						.post.latest.popular
+							img(src="img/postMini3.png" alt="")
+							.describe
+								.postTitle MAGNA MOLLIS ULTRICIES
+								.date 3th oct 2012
+	include includes/contact.pug
+	include includes/footer.pug
+	include includes/scripts.pug
+	script(src="js/blog.js")
