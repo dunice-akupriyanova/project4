@@ -28,7 +28,6 @@ $(document).ready(function() {
 		$('.filter .active').removeClass('active');
 		$(this).addClass('active');
 		var selector = $(this).attr('data-filter');
-		// console.log('selector='+selector);
 		$container.isotope({
 			filter: selector,
 			animationOptions: {

@@ -453,11 +453,12 @@ footer {
     footer .right .text {
       font-family: "OpenSans", arial;
       text-transform: uppercase; }
-    footer .right .socio {
-      font-size: 18px;
-      margin-top: 20px; }
-      footer .right .socio i {
-        margin-left: 18px;
-        transition: color 0.2s ease-out 0s; }
-      footer .right .socio i:hover {
-        color: #7beec7; }
+
+.socio {
+  font-size: 18px;
+  margin-top: 20px; }
+  .socio i {
+    margin-left: 18px;
+    transition: color 0.2s ease-out 0s; }
+  .socio i:hover {
+    color: #7beec7; }
