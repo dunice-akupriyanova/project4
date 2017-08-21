@@ -1,0 +1,163 @@
+$gray: #60606e
+$green: #7beec7
+$montserrat: 'Montserrat', arial
+$montserrat_bold: 'Montserrat Bold', arial
+$open_sans: 'OpenSans', arial
+$open_sans_extra_bold: 'Open Sans Extrabold', arial
+body
+	font-family: $montserrat_bold
+.blogItem
+	// min-height: 790px
+	margin-bottom: 60px
+	.blogImg
+		width: 100%
+		margin-bottom: 30px
+	.date
+		background-color: $green
+		display: inline-block
+		height: 30px
+		width: 165px
+		line-height: 30px
+		color: white
+		text-align: center
+	.feedback
+		display: inline-block
+	.icon
+		font-size: 17px
+		margin-right: 12px
+		margin-left: 16px
+		display: inline-block
+	.comments
+		font-family: $montserrat
+	.likes
+		font-family: $montserrat
+		.icon
+			color: #ea6a6a
+	.blogTitle
+		margin-top: 13px
+		margin-bottom: 11px
+		font-size: 18px
+	p
+		line-height: 24px
+		margin-bottom: 21px
+		padding-left: 1px
+@media(min-width: 992px)
+	.blogItem
+		margin-bottom: 70px
+	.blogItem:last-child
+		margin-bottom: 81px
+@media(min-width: 1200px)
+	.blogItem
+		margin-bottom: 98px
+	.blogItem:last-child
+		margin-bottom: 81px
+.right
+	float: right
+	margin-bottom: 30px
+.blogContent
+	margin-top: 50px
+	.search
+		height: 40px
+		.form-control
+			height: 40px
+			font-family: $montserrat_bold
+			font-size: 12px
+			padding-left: 16px
+			background-color: #ececec
+			text-transform: uppercase
+			border-radius: 0px
+			border: 0px
+			box-shadow: none
+			transition: background-color 0.2s ease-out 0s
+		.input-group-btn
+			border-radius: 0px
+			background-color: #ececec
+			.btn
+				border-radius: 0px
+				background-color: #ececec
+				color: #afafb4
+				font-size: 18px
+				padding-right: 17px
+				padding-top: 7px
+		.form-control:focus
+			background-color: #f0f0f0
+	.postList
+		margin-top: 45px
+		ul.postsFilter
+			li.filterItem
+				display: inline-block
+				padding: 0
+				input[type="radio"]
+					display: none
+				label
+					width: 100%
+					text-align: center
+					cursor: pointer
+					font-size: 12px
+					height: 56px
+					line-height: 56px
+					border-bottom: 2px solid #999999
+					color: #999999
+				label.active
+					border-bottom: 2px solid $green
+					color: $gray
+		.posts
+			margin-top: 85px
+			.post
+				display: block
+				width: 100%
+				height: 90px
+				img
+					display: inline-block
+					float: left
+					height: 80px
+					margin-right: 18px
+				.describe
+					display: inline-block
+					float: right
+					position: inherit
+					margin-top: 11px
+				.postTitle
+					display: inline-block
+					line-height: 18px
+				.date
+					display: inline-block
+					font-family: $open_sans
+					font-size: 12px
+	.categoriesPosts
+		margin-top: 40px
+		ul
+			margin-top: 6px
+	.categoryPost
+		cursor: pointer
+		font-family: $open_sans
+		line-height: 51px
+		height: 51px
+		border-bottom: 1px solid gray
+		padding: 0 15px
+		.count
+			float: right
+			display: inline-block
+	.categoryPost:hover
+		border-bottom: 1px solid $green
+	.tags
+		margin-top: 43px
+		ul
+			margin-top: 27px
+		.tag
+			height: 30px
+			line-height: 30px
+			padding: 0 13px
+			background-color: #e5e5e5
+			color: #999999
+			display: inline-block
+			margin-right: 5px
+			margin-bottom: 5px
+			font-size: 12px
+			min-width: 65px
+			text-align: center
+	.archives
+		margin-top: 41px
+		margin-bottom: 30px
+		ul
+			margin-top: 4px

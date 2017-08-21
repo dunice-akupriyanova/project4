@@ -1,0 +1,190 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Services
+	include includes/styles.pug
+	link(rel="stylesheet", href="css/services.css")
+body
+	include includes/site-hero.pug
+	.head.wow.fadeIn
+		include includes/header.pug
+		+site-hero("OUR SERVICES", "SERVICES")
+	.weDo
+		.container
+			.whatWeDo
+				.title WHAT WE DO
+				p.subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.content.row.wow.fadeInUp
+				.text1.col-lg-6.col-md-6
+					p Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+					.row
+						ul.dos.col-sm-6
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Stunning on all screens
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Easy to customize
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Make a difference
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Imagine and create
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Unlimited possibilities
+						ul.dos.col-sm-6
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Remarkable style
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Captivating presentations
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Make your portfolio pop
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Words that matter
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Satisfied clients
+				.col-lg-6.col-md-6.weDoImg
+					img(src="img/wedo.png" alt="")
+	.benefits.wow.fadeInUp
+		.container
+			.row
+				.benefit.col-md-3.col-sm-6
+					.iconBenefits
+						i.icon.ion-ios-pulse
+					.titleBenefit KEEP PULSE GOING
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+				.benefit.col-md-3.col-sm-6
+					.iconBenefits
+						i.icon.ion-ios-infinite-outline
+					.titleBenefit PASS THE LIMITS
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+				.benefit.col-md-3.col-sm-6
+					.iconBenefits
+						i.icon.ion-ios-lightbulb-outline
+					.titleBenefit GREAT IDEAS
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+				.benefit.col-md-3.col-sm-6
+					.iconBenefits
+						i.icon.ion-ios-settings
+					.titleBenefit AWESOME SUPPORT
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+	.pricing
+		.container
+			.pricingPlans
+				.title PRICING PLANS
+				.subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			ul.row.rates
+				li.col-md-4.rate.wow.fadeInUp
+					div.rateContainer.text
+						.titleRate BASIC
+						img(src="img/triangle.svg", alt="").triangle
+						.price $35.99 MONTHLY
+						ul.dos
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Lorem ipsum dolor sit amet
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Consectetuer adipiscing elit
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Sed diam nonummy
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Nibh euismod tincidunt
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Ut laoreet dolore
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Magna aliquam erat volutpat
+						button.getStarted GET STARTED
+				li.col-md-4.rate.wow.fadeInUp(data-wow-delay='0.1s')
+					div.rateContainer.text
+						.titleRate ADVANCED
+						img(src="img/triangle.svg", alt="").triangle
+						.price $55.99 MONTHLY
+						ul.dos
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Lorem ipsum dolor sit amet
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Consectetuer adipiscing elit
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Sed diam nonummy
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Nibh euismod tincidunt
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Ut laoreet dolore
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Magna aliquam erat volutpat
+						button.getStarted GET STARTED
+				li.col-md-4.rate.last.wow.fadeInUp(data-wow-delay='0.2s')
+					div.rateContainer.text
+						.titleRate SMART
+						img(src="img/triangle.svg", alt="").triangle
+						.price $75.99 MONTHLY
+						ul.dos
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Lorem ipsum dolor sit amet
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Consectetuer adipiscing elit
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Sed diam nonummy
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Nibh euismod tincidunt
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Ut laoreet dolore
+							li
+								.checkmark
+									i.icon.ion-checkmark-round
+								|Magna aliquam erat volutpat
+						button.getStarted GET STARTED
+	include includes/contact.pug
+	include includes/footer.pug
+	include includes/scripts.pug

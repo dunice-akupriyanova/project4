@@ -1,0 +1,173 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	include includes/styles.pug
+	title AKAD
+body
+	.head.wow.fadeIn
+		include includes/header.pug
+		.hero
+			.container.wow.fadeInUp
+				.text.flexslider
+					ul.slides
+						li
+							.weare WE'RE
+							.creative DIGITAL AGENCY
+							.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						li
+							.weare WE DO
+							.creative CREATIVE STUFF
+							.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	.history.wow.fadeInUp
+		.container
+			.historyImg.col-md-5
+				.row
+					img(src="img/history.png" alt="")
+			.text.col-lg-6.col-md-5.col-md-offset-1
+				.title HISTORY OF AGENCY
+				.description Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+			button.readMore.col-xs-2 READ MORE
+	.why
+		.container
+			.text
+				.title WHY CHOOSE US
+				.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.row.wow.fadeInUp
+				.col-md-7
+					.row
+						.block.col-sm-6
+							.icon
+								img(src="img/inf.png" alt="")
+							.title UNLIMITED OPTIONS
+							ul.list
+								li BRANDING
+								li DESIGN & COPYWRITING
+								li CONCEPT DEVELOPMENT
+								li USER EXPERIENCE
+						.block.col-sm-6
+							.icon
+								img(src="img/design.png" alt="")
+							.title DESIGN & DEVELOPMENT
+							ul.list
+								li INFORMATION ARCHITECTURE
+								li INTERFACE DESIGN
+								li PRODUCT DESIGN
+								li INTEGRATED AD COMPANIES
+						.block.col-sm-6
+							.icon
+								img(src="img/comerce.png" alt="")
+							.title E-COMMERCE
+							ul.list
+								li PROTOTYPING
+								li TECHNICAL CONSULTING
+								li WEB APPLICATIONS
+								li QUALITY TESTING
+						.block.col-sm-6
+							.icon
+								img(src="img/custom.png" alt="")
+							.title CUSTOMIZABLE DESIGN
+							ul.list
+								li INFORMATION ARCHITECTURE
+								li INTERFACE DESIGN
+								li PRODUCT DESIGN
+								li INTEGRATED AD COMPANIES
+				.col-md-5
+					.row
+						.col-lg-12
+							img(src="img/about.png", alt="" class="aboutImg")
+	.portfolio
+		.container
+			.text
+				.title OUR PORTFOLIO
+				.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.row
+				.categoties.col-md-3.col-sm-3.wow.fadeInLeft
+					.titleCategoties CHOOSE CATEGORY
+					ul.filter
+						li
+							input(type="radio" name="categories" id="all" checked="checked")
+							label(for="all" data-filter="*" class="active") ALL
+						li
+							input(type="radio" name="categories" id="web")
+							label(for="web" data-filter=".web") WEB DESIGN
+						li
+							input(type="radio" name="categories" id="graphics")
+							label(for="graphics" data-filter=".graphics") GRAPHICS
+						li
+							input(type="radio" name="categories" id="fashion")
+							label(for="fashion" data-filter=".fashion") FASHION
+						li
+							input(type="radio" name="categories" id="logoDesign")
+							label(for="logoDesign" data-filter=".logoDesign") LOGO DESIGN
+						li
+							input(type="radio" name="categories" id="ads")
+							label(for="ads" data-filter=".ads") ADVERTISING
+				.col-md-9.col-sm-9
+					.row.images.wow.fadeInUp(data-wow-delay='0.1s')
+						.col.xs-6.col-sm-6.col-md-4.img1.photo.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/1.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img2.fashion.logoDesign.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/2.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img3.ads.graphics.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/3.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img4.fasion.ads.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/4.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img5.graphics.ads.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/5.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img6.logoDesign.web.photo.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/6.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img7.ads.graphics.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/7.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img8.web.fashion.photo.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/8.png" alt="" class="img")
+						.col.xs-6.col-sm-6.col-md-4.img9.fashion.logoDesign.project
+							a(href="").link
+								.hover
+									.info
+										.name BRAVE MEN
+										.photography photography
+								img(src="img/9.png" alt="" class="img")
+	include includes/contact.pug
+	include includes/footer.pug
+	include includes/scripts.pug

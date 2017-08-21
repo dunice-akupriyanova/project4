@@ -1,0 +1,148 @@
+$gray: #60606e
+$green: #7beec7
+$montserrat: 'Montserrat', arial
+$montserrat_bold: 'Montserrat Bold', arial
+$open_sans: 'OpenSans', arial
+$open_sans_extra_bold: 'Open Sans Extrabold', arial
+.weDo
+	min-height: 700px
+	padding-top: 21px
+	.whatWeDo
+		text-align: center
+		max-width: 725px
+		margin: 0 auto
+		.title
+			margin-bottom: 17px
+		.subtitle
+			font-size: 14px
+			margin-bottom: 16px
+			line-height: 22px
+	.content
+		font-family: $open_sans
+		margin-top: 98px
+		.text1
+			margin-bottom: 30px
+			p
+				line-height: 30px
+				margin-top: -8px
+				margin-bottom: 31px
+			.dos
+				li
+					height: 30px
+					line-height: 30px
+		.weDoImg
+			text-align: center
+			img
+				width: 100%
+				max-width: 555px
+.checkmark
+	color: white
+	height: 30px
+	line-height: 30px
+	vertical-align: middle
+	width: 10px
+	font-size: 12px
+	display: inline-block
+	margin-right: 10px
+	i
+		background-color: $green
+		width: 10px
+		height: 10px
+		display: inline-block
+		line-height: 10px
+		font-size: 10px
+	i:before
+		margin-left: 1px
+.benefits
+	min-height: 305px
+	margin-top: 45px
+	.benefit
+		text-align: center
+		margin-bottom: 30px
+		.iconBenefits
+			display: inline-block
+			width: 65px
+			background: url('../img/rect.svg') no-repeat -17px 43px
+			i
+				font-size: 60px
+		.titleBenefit
+			font-family: $montserrat_bold
+			font-size: 18px
+			margin-top: 4px
+		p
+			line-height: 30px
+			margin-top: 7px
+.pricing
+	min-height: 880px
+	padding-top: 21px
+	.pricingPlans
+		text-align: center
+		max-width: 725px
+		margin: 0 auto
+		.title
+			margin-bottom: 17px
+		.subtitle
+			font-family: $open_sans
+			font-size: 14px
+			margin-bottom: 16px
+			line-height: 22px
+.pricing
+	.rates
+		margin-top: 98px
+		.rate
+			margin-bottom: 30px
+		.rate.last
+			margin: 0 auto
+		.rateContainer
+			height: 490px
+			transition: all 0.3s ease-out 0s
+		.rateContainer:hover
+			box-shadow: 0 0 47px 8px #dadada
+			margin-top: -2px
+			height: 494px
+		.rateContainer:hover
+
+		.triangle
+			top: 2px
+			right: 15px
+			position: absolute
+			width: 12px
+			height: 12px
+		.titleRate
+			font-size: 30px
+			padding-top: 20px
+			padding-left: 30px
+			border-top: 4px solid $green
+			font-family: $montserrat_bold
+		.price
+			display: inline-block
+			color: white
+			background-color: $green
+			font-family: $montserrat_bold
+			width: 165px
+			height: 30px
+			line-height: 30px
+			text-align: center
+			margin-top: 10px
+			margin-left: 30px
+		.dos
+			padding-top: 40px
+			padding-left: 30px
+			max-width: 240px
+			text-align: left
+			li
+				height: 36px
+				font-family: $open_sans
+		button.getStarted
+			background-color: $green
+			color: white
+			padding: 10px 20px
+			font-family: $montserrat
+			margin-top: 38px
+			margin-left: 30px
+			height: 51px
+@media (max-width: 991px)
+	.pricing
+		.rates
+			.dos
+				margin: 0 auto

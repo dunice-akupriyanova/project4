@@ -1,0 +1,141 @@
+.weDo {
+  min-height: 700px;
+  padding-top: 21px; }
+  .weDo .whatWeDo {
+    text-align: center;
+    max-width: 725px;
+    margin: 0 auto; }
+    .weDo .whatWeDo .title {
+      margin-bottom: 17px; }
+    .weDo .whatWeDo .subtitle {
+      font-size: 14px;
+      margin-bottom: 16px;
+      line-height: 22px; }
+  .weDo .content {
+    font-family: "OpenSans", arial;
+    margin-top: 98px; }
+    .weDo .content .text1 {
+      margin-bottom: 30px; }
+      .weDo .content .text1 p {
+        line-height: 30px;
+        margin-top: -8px;
+        margin-bottom: 31px; }
+      .weDo .content .text1 .dos li {
+        height: 30px;
+        line-height: 30px; }
+    .weDo .content .weDoImg {
+      text-align: center; }
+      .weDo .content .weDoImg img {
+        width: 100%;
+        max-width: 555px; }
+
+.checkmark {
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  width: 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 10px; }
+  .checkmark i {
+    background-color: #7beec7;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    line-height: 10px;
+    font-size: 10px; }
+  .checkmark i:before {
+    margin-left: 1px; }
+
+.benefits {
+  min-height: 305px;
+  margin-top: 45px; }
+  .benefits .benefit {
+    text-align: center;
+    margin-bottom: 30px; }
+    .benefits .benefit .iconBenefits {
+      display: inline-block;
+      width: 65px;
+      background: url("../img/rect.svg") no-repeat -17px 43px; }
+      .benefits .benefit .iconBenefits i {
+        font-size: 60px; }
+    .benefits .benefit .titleBenefit {
+      font-family: "Montserrat Bold", arial;
+      font-size: 18px;
+      margin-top: 4px; }
+    .benefits .benefit p {
+      line-height: 30px;
+      margin-top: 7px; }
+
+.pricing {
+  min-height: 880px;
+  padding-top: 21px; }
+  .pricing .pricingPlans {
+    text-align: center;
+    max-width: 725px;
+    margin: 0 auto; }
+    .pricing .pricingPlans .title {
+      margin-bottom: 17px; }
+    .pricing .pricingPlans .subtitle {
+      font-family: "OpenSans", arial;
+      font-size: 14px;
+      margin-bottom: 16px;
+      line-height: 22px; }
+
+.pricing .rates {
+  margin-top: 98px; }
+  .pricing .rates .rate {
+    margin-bottom: 30px; }
+  .pricing .rates .rate.last {
+    margin: 0 auto; }
+  .pricing .rates .rateContainer {
+    height: 490px;
+    transition: all 0.3s ease-out 0s; }
+  .pricing .rates .rateContainer:hover {
+    box-shadow: 0 0 47px 8px #dadada;
+    margin-top: -2px;
+    height: 494px; }
+  .pricing .rates .triangle {
+    top: 2px;
+    right: 15px;
+    position: absolute;
+    width: 12px;
+    height: 12px; }
+  .pricing .rates .titleRate {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    border-top: 4px solid #7beec7;
+    font-family: "Montserrat Bold", arial; }
+  .pricing .rates .price {
+    display: inline-block;
+    color: white;
+    background-color: #7beec7;
+    font-family: "Montserrat Bold", arial;
+    width: 165px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 30px; }
+  .pricing .rates .dos {
+    padding-top: 40px;
+    padding-left: 30px;
+    max-width: 240px;
+    text-align: left; }
+    .pricing .rates .dos li {
+      height: 36px;
+      font-family: "OpenSans", arial; }
+  .pricing .rates button.getStarted {
+    background-color: #7beec7;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Montserrat", arial;
+    margin-top: 38px;
+    margin-left: 30px;
+    height: 51px; }
+
+@media (max-width: 991px) {
+  .pricing .rates .dos {
+    margin: 0 auto; } }

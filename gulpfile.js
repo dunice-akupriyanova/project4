@@ -5,45 +5,49 @@ var gulp = require('gulp'),
 	del			= require('del');
 
 gulp.task('sass', function(){ // Создаем таск "sass"
-    return gulp.src('app/sass/**/*.sass') // Берем источник
+    return gulp.src('src/sass/**/*.sass') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+        .pipe(gulp.dest('dist/css')) // Выгружаем результата в папку dist/css
 });
 
 gulp.task('pug', function() {
-  return gulp.src('app/pug/**/*.pug')
+  return gulp.src('src/pug/**/*.pug')
       .pipe(pug())
-      .pipe(gulp.dest("app"))
+      .pipe(gulp.dest("dist"))
 });
 
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app'
+			baseDir: 'dist' // ориентир на папку продакшена
 		},
 		notify: false
 	});
 });
 
 gulp.task('watch', ['browser-sync', 'sass', 'pug'], function() {
-	gulp.watch('app/sass/**/*.sass', ['sass']);
-	gulp.watch('app/pug/**/*.pug', ['pug']);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/css/**/*.css', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
+	gulp.watch('src/sass/**/*.sass', ['sass']);
+	gulp.watch('src/pug/**/*.pug', ['pug']);
+	gulp.watch('dist/*.html', browserSync.reload);
+	gulp.watch('dist/css/**/*.css', browserSync.reload);
+	gulp.watch('dist/js/**/*.js', browserSync.reload);
 });
 
-gulp.task('clean', function() {
+gulp.task('cleanAll', function() { //сотрёт всю папку продакшена (dist)
 	return del.sync('dist');
 });
 
-gulp.task('build', ['clean'], function() {
-	var buldCss = gulp.src('app/css/main.css')
+gulp.task('build', ['sass', 'pug'], function() {
+	var buldCss = gulp.src('src/libs/css/**/*')
 		.pipe(gulp.dest('dist/css'));
-	var buildFonts = gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'));
-	var buildJs = gulp.src('app/js/**/*')
+	var buldCss = gulp.src('src/libs/js/**/*')
 		.pipe(gulp.dest('dist/js'));
-	var buldHtml = gulp.src('app/*.html')
+	var buildFonts = gulp.src('src/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts'));
+	var buildJs = gulp.src('src/js/**/*')
+		.pipe(gulp.dest('dist/js'));
+	var buildJs = gulp.src('src/img/**/*')
+		.pipe(gulp.dest('dist/img'));
+	var buldHtml = gulp.src('src/*.html')
 		.pipe(gulp.dest('dist'));
 });
